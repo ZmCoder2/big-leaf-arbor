@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/big-leaf-arbor/static/css/main.073c9b0a.css",
-    "main.js": "/big-leaf-arbor/static/js/main.c53c0276.js",
-    "static/js/787.95f4b5dd.chunk.js": "/big-leaf-arbor/static/js/787.95f4b5dd.chunk.js",
-    "static/media/logo.svg": "/big-leaf-arbor/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/big-leaf-arbor/static/css/main.bcc16053.css",
+    "main.js": "/big-leaf-arbor/static/js/main.a33cd5ee.js",
     "index.html": "/big-leaf-arbor/index.html",
-    "main.073c9b0a.css.map": "/big-leaf-arbor/static/css/main.073c9b0a.css.map",
-    "main.c53c0276.js.map": "/big-leaf-arbor/static/js/main.c53c0276.js.map",
-    "787.95f4b5dd.chunk.js.map": "/big-leaf-arbor/static/js/787.95f4b5dd.chunk.js.map"
+    "main.bcc16053.css.map": "/big-leaf-arbor/static/css/main.bcc16053.css.map",
+    "main.a33cd5ee.js.map": "/big-leaf-arbor/static/js/main.a33cd5ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.c53c0276.js"
+    "static/css/main.bcc16053.css",
+    "static/js/main.a33cd5ee.js"
   ]
 }
