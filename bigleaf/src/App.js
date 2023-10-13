@@ -14,7 +14,7 @@ function App() {
     
     <HashRouter basename='/'>
       <div className="App"> 
-      <NavbarComp />
+      
       </div>
       <Routes>
           <Route path="/" element={<Layout />}>
