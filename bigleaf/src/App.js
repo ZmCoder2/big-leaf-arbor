@@ -1,16 +1,21 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import './App.scss';
 import Home from './components/Home'
-import Bootstrap from 'bootstrap';
+import NavbarComp from './components/NavbarComp'
 // import WhoWeAre from './components/WhoWeAre';
 // import Contact from './components/Contact';
 // import TreeCare from './components/TreeCare';
-import './App.scss';
+
 
 function App() {
 
   return (
+    
     <HashRouter basename='/'>
+      <div className="App"> 
+      <NavbarComp />
+      </div>
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
