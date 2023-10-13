@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout/layout'
-import Home from './components/Home/homepage'
+import Layout from './components/Layout'
+import Home from './components/Home'
+import Bootstrap from 'bootstrap';
 // import WhoWeAre from './components/WhoWeAre';
 // import Contact from './components/Contact';
 // import TreeCare from './components/TreeCare';
