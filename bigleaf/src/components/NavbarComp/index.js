@@ -3,12 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Form, FormControl, Button } from 'react-bootstrap';
+// import '../App.scss';
 
 function NavbarComp() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <div className= "nav-bar">
+
+    <Navbar  expand="lg" className="bg-body-tertiary">
+      {/* navbar to be dark is  bg="dark" get rid of classname if you want dark */}
       <Container>
-        <Nav.Link href="#home">Big Leaf Arbor</Nav.Link>
+        <Nav.Link href="#home">Bigleaf Arbor</Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -63,11 +67,6 @@ function NavbarComp() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Institutional Clients</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Special Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Ivy Removal</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">Shrub Pruning</NavDropdown.Item>
-            </NavDropdown>
             <NavDropdown title="Who We Are" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Meet The Team</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -87,6 +86,8 @@ function NavbarComp() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+   
+    </div>
   );
 }
 

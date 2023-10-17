@@ -1,15 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../NavbarComp';
+// import Navbar from './components/NavbarComp';
 import './index.scss';
+import NavbarComp from '../NavbarComp';
 
 const Layout = () => {
     return (
         <div className="App">
-            <Navbar />
+            <NavbarComp />
             <div className='page'>
-                <span className='tags top-tags'>
-                    
-                </span>
+                {/* <span className='tags top-tags'></span> */}
+                <Outlet />
             </div>
         </div>
     )

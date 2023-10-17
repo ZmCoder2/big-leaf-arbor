@@ -6,14 +6,15 @@ import './index.scss';
 const Home = () => {
 
     return (
-        <>
+        
         <div className = "container home-page">
             {/* <img src={treePic}></img> */}
             <div className = "text-zone">
-                <h1>BIG LEAF ARBOR!!!!!</h1>
+                BIG LEAF ARBOR!!!!!
             </div>
+            
         </div>
-        </>
+        
     )
 }
 

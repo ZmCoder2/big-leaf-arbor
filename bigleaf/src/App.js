@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import './App.scss';
 import Home from './components/Home'
 import NavbarComp from './components/NavbarComp'
+import { Button, Navbar, Nav, NavDropdown,Container } from "react-bootstrap";
 // import WhoWeAre from './components/WhoWeAre';
 // import Contact from './components/Contact';
 // import TreeCare from './components/TreeCare';
@@ -13,9 +14,7 @@ function App() {
   return (
     
     <HashRouter basename='/'>
-      <div className="App"> 
-      
-      </div>
+      {/* <div className="App"></div> */}
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
