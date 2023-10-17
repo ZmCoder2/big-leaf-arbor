@@ -1,30 +1,20 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import './App.scss';
-import Home from './components/Home'
-import NavbarComp from './components/NavbarComp'
-import { Button, Navbar, Nav, NavDropdown,Container } from "react-bootstrap";
-// import WhoWeAre from './components/WhoWeAre';
-// import Contact from './components/Contact';
-// import TreeCare from './components/TreeCare';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';  // Updated import path
+import TreeCare from './components/TreeCare/treeCare';  // Updated import path
+import NavbarComp from './components/NavbarComp/NavbarComp';
 
 function App() {
-
-  return (
-    
-    <HashRouter basename='/'>
-      {/* <div className="App"></div> */}
-      <Routes>
-          <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          {/* <Route path="/about" element={<WhoWeAre />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/treecare" element={<TreeCare />} /> */}
-        </Route>
-      </Routes>
-    </HashRouter>
-  );
+    return (
+        <Router basename='/big-leaf-arbor'>
+            <NavbarComp />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path="/treecare" element={<TreeCare />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
+
