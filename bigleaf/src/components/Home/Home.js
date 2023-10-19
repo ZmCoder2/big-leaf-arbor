@@ -4,6 +4,7 @@
 // import { Outlet } from 'react-router-dom';
 // import NavbarComp from '../NavbarComp'
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Card, Col, Carousel, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
@@ -70,13 +71,15 @@ const Home = () => {
               <Card.Body>
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Text>{data.text}</Card.Text>
-                <Button>{data.button}</Button>
+                <Link to={`/${data.button.toLowerCase().replace(' ', '')}`}>
+  <Button>{data.button}</Button>
+</Link>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
-      <h2 className="homepage-who-we-service">Who We service</h2>
+      <h2 className="homepage-who-we-service">Who We Service</h2>
       <Row xs={1} md={2} lg={4} className="g-4">
   {whoWeserviceData.map((data, idx) => (
     <Col key={idx}>

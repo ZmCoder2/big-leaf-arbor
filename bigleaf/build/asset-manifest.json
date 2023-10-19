@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/big-leaf-arbor/static/css/main.efcddcb8.css",
-    "main.js": "/big-leaf-arbor/static/js/main.5ae5bc52.js",
+    "main.css": "/big-leaf-arbor/static/css/main.f3ab1054.css",
+    "main.js": "/big-leaf-arbor/static/js/main.5cdf6d6f.js",
     "index.html": "/big-leaf-arbor/index.html",
-    "main.efcddcb8.css.map": "/big-leaf-arbor/static/css/main.efcddcb8.css.map",
-    "main.5ae5bc52.js.map": "/big-leaf-arbor/static/js/main.5ae5bc52.js.map"
+    "main.f3ab1054.css.map": "/big-leaf-arbor/static/css/main.f3ab1054.css.map",
+    "main.5cdf6d6f.js.map": "/big-leaf-arbor/static/js/main.5cdf6d6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.efcddcb8.css",
-    "static/js/main.5ae5bc52.js"
+    "static/css/main.f3ab1054.css",
+    "static/js/main.5cdf6d6f.js"
   ]
 }

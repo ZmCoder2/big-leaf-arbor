@@ -3,7 +3,8 @@ import React from 'react'
 // import Nav from 'react-bootstrap/Nav';
 // import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Navbar, Nav, NavDropdown,Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 // import { Form, FormControl, Button } from 'react-bootstrap';
 import './index.scss';
 
@@ -14,7 +15,7 @@ function NavbarComp() {
     <Navbar  expand="lg" className="bg-body-tertiary">
       {/* navbar to be dark is  bg="dark" get rid of classname if you want dark */}
       <Container>
-        <Nav.Link href="#home">Bigleaf Arbor</Nav.Link>
+      <Link to="/" className="navbar-brand">Bigleaf Arbor</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
