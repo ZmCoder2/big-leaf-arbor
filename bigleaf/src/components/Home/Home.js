@@ -4,11 +4,10 @@
 // import { Outlet } from 'react-router-dom';
 // import NavbarComp from '../NavbarComp'
 import React from 'react';
+import { Button, Card, Col, Carousel, Row } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 const cardData1 = [
   {
@@ -46,6 +45,18 @@ const whoWeserviceData = [
   },
 ]
 
+const carouselData = [
+  {
+    name: 'Example Name 1',
+    review: 'Laborum est aute incididunt qui eiusmod ad laborum non mollit excepteur sit adipisicing. Ipsum in culpa aliqua non aliquip nostrud deserunt magna. Excepteur culpa in ad ex ad officia voluptate. Laborum reprehenderit deserunt anim veniam in eiusmod sit in eiusmod. Consequat tempor quis officia exercitation eiusmod est veniam et dolore non occaecat quis eiusmod. Lorem commodo non dolor excepteur qui velit ipsum et. Esse deserunt tempor minim id elit minim minim culpa.',
+  },
+  {
+    name: 'Example Name 2',
+    review: 'Proident duis culpa eiusmod duis aliquip irure reprehenderit laborum voluptate qui minim. Proident pariatur labore dolore aliquip aliquip id magna ea nulla consequat. Proident qui irure fugiat ex eu enim in dolor eiusmod nulla incididunt quis proident.'
+  }
+]
+
+
 const Home = () => {
   return (
     <div className="home-page">
@@ -81,22 +92,20 @@ const Home = () => {
         ))}
       </Row>
       <h2 className='homepage-reviews'>Client Reviews</h2>
-      <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
-      </Card.Body>
-    </Card>
+      <Carousel>
+      {carouselData.map((card, index) => (
+        <Carousel.Item key={index}>
+          <Card>
+            <Card.Body>
+              <Card.Title>{card.name}</Card.Title>
+              <Card.Text>{card.review}</Card.Text>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+      ))}
+    </Carousel>
     </div>
   );
 }
 
 export default Home;
-
-
