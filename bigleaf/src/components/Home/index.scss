@@ -2,21 +2,20 @@
 
 .home-page {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Change to a vertical layout */
   align-items: center;
+  justify-content: center;
   height: 100vh; /* Adjust the height as needed */
 
-  .text-zone {
-    text-align: center;
-    background-color: #f0f0f0; /* Background color for the text zone */
-    padding: 20px;
-    border-radius: 8px; /* Add rounded corners for style */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+  .homepage-services {
+    color: #087551;
   }
 
   h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    color: black; /* Text color */
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px; /* Add margin to create space between the header and the card */
   }
+
 }
 
