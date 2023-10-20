@@ -36,7 +36,7 @@ function NavbarComp() {
                   <Link to="/stumpgrinding">Stump Grinding</Link>
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title={<Link to="/specialservices">Special Services</Link>} id="basic-nav-dropdown">
+              <NavDropdown title="Special Services" id="basic-nav-dropdown">
               <NavDropdown.Item>
                   <Link to="/ivyremoval">Ivy Removal</Link>
                 </NavDropdown.Item>
@@ -54,7 +54,7 @@ function NavbarComp() {
                   <Link to="/hazardevaluation">Hazard Evaluation</Link>
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title={<Link to="/serviceareas">Service Areas</Link>} id="basic-nav-dropdown">
+              <NavDropdown title="Service Areas" id="basic-nav-dropdown">
                 <NavDropdown title="Service Area" id="servArea-menu">
                   <NavDropdown.Item>Acworth</NavDropdown.Item>
                   <NavDropdown.Item>Alpharetta</NavDropdown.Item>
@@ -83,12 +83,8 @@ function NavbarComp() {
                 <NavDropdown.Item>
                   <Link to="/commercialproperties">Commercial Properties</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <Link to="/institutionalclients">Institutional Clients</Link>
-                </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title={<Link to="/whoweare">Who We Are</Link>} id="basic-nav-dropdown">
+              <NavDropdown title="Who We Are" id="basic-nav-dropdown">
               <NavDropdown.Item>
                   <Link to="/meettheteam">Meet The Team</Link>
                 </NavDropdown.Item>
@@ -98,10 +94,10 @@ function NavbarComp() {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
-                  <Link to="/clientreviews">Clients Reviews</Link>
+                  <Link to="/clientsreviews">Clients Reviews</Link>
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title={<Link to="/contact">Contact</Link>} id="basic-nav-dropdown">
+              <NavDropdown title="Contact" id="basic-nav-dropdown">
               <NavDropdown.Item>
                   <Link to="/estimate">Estimate</Link>
                 </NavDropdown.Item>
