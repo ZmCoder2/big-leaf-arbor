@@ -16,25 +16,43 @@ function NavbarComp() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title={<Link to="/treecare">Tree Care</Link>} id="basic-nav-dropdown">
-                <NavDropdown.Item href="/treeremoval">Tree Removal</NavDropdown.Item>
+              <NavDropdown.Item>
+                  <Link to="/treeremoval">Tree Removal</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/structuralpruning">Structural Pruning</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/structuralpruning">Structural Pruning</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/cranework">Crane Work</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/cranework">Crane Work</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="emergencywork">Emergency Work</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/emergencywork">Emergency Work</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="stumpgrinding">Stump Grinding</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/stumpgrinding">Stump Grinding</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title={<Link to="/specialservices">Special Services</Link>} id="basic-nav-dropdown">
-                <NavDropdown.Item href="/ivyremoval">Ivy Removal</NavDropdown.Item>
+              <NavDropdown.Item>
+                  <Link to="/ivyremoval">Ivy Removal</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/shrubpruning">Shrub Pruning</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/shrubpruning">Shrub Pruning</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title={<Link to="/consulting">Consulting</Link>} id="basic-nav-dropdown">
-                <NavDropdown.Item href="/diagnosis">Diagnosis</NavDropdown.Item>
+              <NavDropdown.Item>
+                  <Link to="/diagnosis">Diagnosis</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="hazardevaluation">Hazard Evaluation</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/hazardevaluation">Hazard Evaluation</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title={<Link to="/serviceareas">Service Areas</Link>} id="basic-nav-dropdown">
                 <NavDropdown title="Service Area" id="servArea-menu">
@@ -58,26 +76,43 @@ function NavbarComp() {
                   {/* need to find out the areas we cover */}
                 </NavDropdown>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/residentialclients">Residential Clients</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/residentialclients">Residential Clients</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/commercialproperties">Commercial Properties</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/commercialproperties">Commercial Properties</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/institutionalclients">Institutional Clients</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/institutionalclients">Institutional Clients</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title={<Link to="/whoweare">Who We Are</Link>} id="basic-nav-dropdown">
-                <NavDropdown.Item href="/meettheteam">Meet The Team</NavDropdown.Item>
+              <NavDropdown.Item>
+                  <Link to="/meettheteam">Meet The Team</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/highlights">Highlights</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/highlights">Highlights</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="clientreviews">Clients Reviews</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/clientreviews">Clients Reviews</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title={<Link to="/contact">Contact</Link>} id="basic-nav-dropdown">
-                {/* <NavDropdown title={<Link to="/contact">Contact</Link>} id="basic-nav-dropdown"> */}
-                <NavDropdown.Item href="/estimate">Estimate</NavDropdown.Item>
+              <NavDropdown.Item>
+                  <Link to="/estimate">Estimate</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/contactus">Contact Us</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/contactus">Contact Us</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/joinourteam">Join Our Team</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/joinourteam">Join Our Team</Link>
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

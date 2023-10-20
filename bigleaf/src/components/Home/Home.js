@@ -9,7 +9,6 @@ import { Button, Card, Col, Carousel, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 
-
 const cardData1 = [
   {
     title: 'Tree Care',
@@ -57,7 +56,6 @@ const carouselData = [
   }
 ]
 
-
 const Home = () => {
   return (
     <div className="home-page">
@@ -72,8 +70,8 @@ const Home = () => {
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Text>{data.text}</Card.Text>
                 <Link to={`/${data.button.toLowerCase().replace(' ', '')}`}>
-  <Button>{data.button}</Button>
-</Link>
+                  <Button>{data.button}</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
@@ -81,32 +79,32 @@ const Home = () => {
       </Row>
       <h2 className="homepage-who-we-service">Who We Service</h2>
       <Row xs={1} md={2} lg={4} className="g-4">
-  {whoWeserviceData.map((data, idx) => (
-    <Col key={idx}>
-      <Card className="bg-dark text-white" style={{ width: '18rem' }}>
-        <Card.Img src={data.imageUrl} alt={`Card image ${idx + 1}`} />
-        <Card.ImgOverlay>
-          <Card.Title>{data.title}</Card.Title>
-          <Card.Text>{data.text}</Card.Text>
-          <Card.Text>Last updated 3 mins ago</Card.Text>
-        </Card.ImgOverlay>
-      </Card>
-    </Col>
+        {whoWeserviceData.map((data, idx) => (
+          <Col key={idx}>
+            <Card className="bg-dark text-white" style={{ width: '18rem' }}>
+              <Card.Img src={data.imageUrl} alt={`Card image ${idx + 1}`} />
+              <Card.ImgOverlay>
+                <Card.Title>{data.title}</Card.Title>
+                <Card.Text>{data.text}</Card.Text>
+                <Card.Text>Last updated 3 mins ago</Card.Text>
+              </Card.ImgOverlay>
+            </Card>
+          </Col>
         ))}
       </Row>
       <h2 className='homepage-reviews'>Client Reviews</h2>
       <Carousel>
-      {carouselData.map((card, index) => (
-        <Carousel.Item key={index}>
-          <Card>
-            <Card.Body>
-              <Card.Title>{card.name}</Card.Title>
-              <Card.Text>{card.review}</Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+        {carouselData.map((card, index) => (
+          <Carousel.Item key={index}>
+            <Card>
+              <Card.Body>
+                <Card.Title>{card.name}</Card.Title>
+                <Card.Text>{card.review}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </div>
   );
 }
