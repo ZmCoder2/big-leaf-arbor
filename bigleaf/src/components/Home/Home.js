@@ -8,27 +8,35 @@ import { Link } from 'react-router-dom';
 import { Button, Card, Col, Carousel, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTree, faSeedling, faCommentDots } from '@fortawesome/free-solid-svg-icons'
+import CraneIcon from '../../assets/crane-icon.png';
 
 const cardData1 = [
   {
     title: 'Tree Care',
     text: 'Tree Care content will go here!',
     button: 'Tree Care',
+    icon: faTree,
   },
   {
     title: 'Special Services',
     text: 'Special Services content will go here.',
     button: 'Special Services',
+    icon: faSeedling,
   },
   {
     title: 'Emergency Work',
     text: 'Emergency Work content will go here.',
     button: 'Emergency Work',
+    icon: CraneIcon,
+    customIconClass: 'custom-icon',
   },
   {
     title: 'Consulting',
     text: 'Maybe consulting content will go here',
     button: 'Consulting',
+    icon: faCommentDots,
   },
 ];
 
@@ -64,8 +72,16 @@ const Home = () => {
         {cardData1.map((data, idx) => (
           <Col key={idx}>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              {/* Find images for each card */}
+              {data.icon === CraneIcon && (
+                <img
+                  src={data.icon}
+                  alt="Emergency Work Icon"
+                  className={data.customIconClass ? data.customIconClass : ''}
+                />
+              )}
+              {data.icon !== CraneIcon && (
+                <FontAwesomeIcon variant="top" icon={data.icon} size="3x" />
+              )}
               <Card.Body>
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Text>{data.text}</Card.Text>

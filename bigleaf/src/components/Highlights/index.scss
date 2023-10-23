@@ -1,0 +1,15 @@
+.home-page {
+    .card-container {
+      position: relative;
+      text-align: center; /* Center the content horizontally */
+    }
+  
+    .custom-icon {
+      width: 4em; /* size of the crane icon */
+      height: 4em;
+      position: relative;
+      top: 0; 
+      left: 50%; 
+      transform: translateX(-50%); 
+    }
+  }
