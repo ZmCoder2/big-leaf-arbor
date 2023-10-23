@@ -5,7 +5,7 @@
 // import NavbarComp from '../NavbarComp'
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Card, Col, Carousel, Row } from 'react-bootstrap';
+import { Button, Card, Col, Carousel, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -72,6 +72,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <h2 className="homepage-services">Bigleaf's Tree Services</h2>
+      <Container>
       <Row xs={1} md={2} className="g-4">
         {cardData1.map((data, idx) => (
           <Col key={idx}>
@@ -97,11 +98,12 @@ const Home = () => {
           </Col>
         ))}
       </Row>
+      </Container>
       <h2 className="homepage-who-we-service">Who We Service</h2>
       <Row xs={1} md={2} lg={4} className="g-4">
         {whoWeserviceData.map((data, idx) => (
           <Col key={idx}>
-            <Card className="bg-dark text-white" style={{ width: '18rem' }}>
+            <Card className="bg-dark text-white" style={{ minHeight: '100%', maxHeight: '100%' }}>
               <Card.Img src={data.imageUrl} alt={`Card image ${idx + 1}`} />
               <Card.ImgOverlay>
                 <Card.Title>{data.title}</Card.Title>
@@ -126,6 +128,6 @@ const Home = () => {
       </Carousel>
     </div>
   );
-}
+};
 
 export default Home;

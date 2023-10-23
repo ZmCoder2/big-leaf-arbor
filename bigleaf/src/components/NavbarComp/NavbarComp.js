@@ -7,11 +7,10 @@ import './index.scss';
 function NavbarComp() {
   return (
     <div className="nav-bar">
-
-      <Navbar expand="md" className="bg-body-tertiary">
+      <Navbar expand="md" className="bg-body-tertiary mx-auto ml-auto">
         {/* navbar to be dark is  bg="dark" get rid of classname if you want dark */}
         <Container>
-          <Link to="/" className="navbar-brand">Bigleaf Arbor</Link>
+          <Link to="/" className="navbar-brand mx-auto">Bigleaf Arbor</Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

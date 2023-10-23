@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import TreeCare from './components/TreeCare/treeCare';
@@ -26,6 +27,7 @@ import TreeRemoval from './components/TreeRemoval/TreeRemoval';
 function App() {
     return (
         <Router basename='/big-leaf-arbor'>
+            <div className="container mx-auto">
             <NavbarComp />
             <Routes>
                 <Route path='/' element={<Home />} />
@@ -50,6 +52,7 @@ function App() {
                  <Route path='/contactus' element={<ContactUs />} />
                  <Route path='/joinourteam' element={<JoinOurTeam />} />
             </Routes>
+            </div>
         </Router>
     );
 }

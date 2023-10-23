@@ -1,5 +1,3 @@
-/* index.scss */
-
 .home-page {
   display: flex;
   flex-direction: column; /* Change to a vertical layout */
@@ -9,17 +7,72 @@
 
   .homepage-services {
     color: #087551;
+    font-size: 28px; /* Adjust the font size */
+    text-align: center; /* Center align the text */
+    padding-top: 175px; /* Adjust the top padding to create space */
+    margin-bottom: 10px;
   }
 
   h2 {
     font-size: 24px;
     color: black;
     margin-bottom: 20px; /* Add margin to create space between the header and the card */
+    text-align: center; /* Center align the h2 element */
   }
 
-   .carousel-control-prev-icon, .carousel-control-next-icon {
+  .g-4 .col {
+    margin-bottom: 20px; /* Add margin to create space between the cards */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
     background-color: gray;
-    
+  }
+
+  .g-4 {
+    margin: 20px 0; /* Add margin to space out the cards */
+  }
+
+  .card {
+    border: 1px solid #ddd; /* Card border color */
+    border-radius: 10px; /* Adjust the card border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+
+  .card-title {
+    font-size: 20px; /* Font size for card titles */
+    text-align: center; /* Center align the card title */
+  }
+
+  .card-text {
+    font-size: 16px; /* Font size for card text */
   }
 }
 
+.container {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Add responsive styles for screens up to 768px wide */
+  .homepage-services {
+    font-size: 20px;
+    padding-top: 100px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .g-4 .col {
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+}
