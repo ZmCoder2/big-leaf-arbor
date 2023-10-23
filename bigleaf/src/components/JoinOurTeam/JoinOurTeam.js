@@ -3,7 +3,7 @@ import './index.scss'
 
 const JoinOurTeam = () => {
     return (
-        <div className="clients-reviews">
+        <div className="joinourteam-page">
             <div className="text-zone">
                 Hello from Join Our Team page
             </div>

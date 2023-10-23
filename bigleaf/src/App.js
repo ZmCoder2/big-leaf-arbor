@@ -21,6 +21,7 @@ import ClientsReviews from './components/ClientsReviews/ClientsReviews';
 import Estimate from './components/Estimate/Estimate';
 import ContactUs from './components/ContactUs/ContactUs';
 import JoinOurTeam from './components/JoinOurTeam/JoinOurTeam';
+import TreeRemoval from './components/TreeRemoval/TreeRemoval';
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/specialservices' element={<SpecialServices />} />
                 <Route path='/emergencywork' element={<EmergencyWork />} />
                 <Route path='/consulting' element={<Consulting />} />
+                <Route path='/treeremoval' element={<TreeRemoval />} />
                 <Route path='/structuralpruning' element={<StructuralPruning />} />
                 <Route path='/cranework' element={<CraneWork />} />
                 <Route path='/stumpgrinding' element={<StumpGrinding />} />

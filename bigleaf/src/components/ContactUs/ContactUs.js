@@ -3,7 +3,7 @@ import './index.scss'
 
 const ContactUs = () => {
     return (
-        <div className="clients-reviews">
+        <div className="contactus-page">
             <div className="text-zone">
                 Hello from Contact Us page
             </div>
