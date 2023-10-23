@@ -18,6 +18,9 @@ import CommercialProperties from './components/CommercialProperties/CommercialPr
 import MeetTheTeam from './components/MeetTheTeam/MeetTheTeam';
 import Highlights from './components/Highlights/Highlights';
 import ClientsReviews from './components/ClientsReviews/ClientsReviews';
+import Estimate from './components/Estimate/Estimate';
+import ContactUs from './components/ContactUs/ContactUs';
+import JoinOurTeam from './components/JoinOurTeam/JoinOurTeam';
 
 function App() {
     return (
@@ -41,7 +44,9 @@ function App() {
                  <Route path='/meettheteam' element={<MeetTheTeam />} />
                  <Route path='/highlights' element={<Highlights />} />
                  <Route path='/clientsreviews' element={<ClientsReviews />} />
-                 {/* <Route path='/estimate' element={<Estimate />} /> */}
+                 <Route path='/estimate' element={<Estimate />} />
+                 <Route path='/contactus' element={<ContactUs />} />
+                 <Route path='/joinourteam' element={<JoinOurTeam />} />
             </Routes>
         </Router>
     );
