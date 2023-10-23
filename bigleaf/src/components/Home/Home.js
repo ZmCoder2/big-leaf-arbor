@@ -11,6 +11,8 @@ import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTree, faSeedling, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import CraneIcon from '../../assets/crane-icon.png';
+import ResidentialImg from '../../assets/residential-clients.jpeg'
+import CommercialImg from '../../assets/commercial-clients.jpeg'
 
 const cardData1 = [
   {
@@ -42,11 +44,13 @@ const cardData1 = [
 
 const whoWeserviceData = [
   {
+    imageUrl: ResidentialImg,
     title: 'Residential',
     text: 'Residential client content will go here.',
     button: 'Residential Clients',
   },
   {
+    imageUrl: CommercialImg,
     title: 'Commercial',
     text: 'Residential client content will go here.',
     button: 'Commercial Properties',
@@ -102,7 +106,6 @@ const Home = () => {
               <Card.ImgOverlay>
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Text>{data.text}</Card.Text>
-                <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
             </Card>
           </Col>
