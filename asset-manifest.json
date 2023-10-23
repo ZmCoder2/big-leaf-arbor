@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/big-leaf-arbor/static/css/main.f3ab1054.css",
-    "main.js": "/big-leaf-arbor/static/js/main.c128b48c.js",
+    "main.js": "/big-leaf-arbor/static/js/main.cbfc64b2.js",
     "index.html": "/big-leaf-arbor/index.html",
     "main.f3ab1054.css.map": "/big-leaf-arbor/static/css/main.f3ab1054.css.map",
-    "main.c128b48c.js.map": "/big-leaf-arbor/static/js/main.c128b48c.js.map"
+    "main.cbfc64b2.js.map": "/big-leaf-arbor/static/js/main.cbfc64b2.js.map"
   },
   "entrypoints": [
     "static/css/main.f3ab1054.css",
-    "static/js/main.c128b48c.js"
+    "static/js/main.cbfc64b2.js"
   ]
 }
