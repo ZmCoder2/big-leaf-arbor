@@ -99,7 +99,9 @@ const Home = () => {
         ))}
       </Row>
       </Container>
+      <Row>
       <h2 className="homepage-who-we-service">Who We Service</h2>
+      </Row>
       <Row xs={1} md={2} lg={4} className="g-4">
         {whoWeserviceData.map((data, idx) => (
           <Col key={idx}>
@@ -113,7 +115,9 @@ const Home = () => {
           </Col>
         ))}
       </Row>
+      <Row>
       <h2 className='homepage-reviews'>Client Reviews</h2>
+      </Row>
       <Carousel>
         {carouselData.map((card, index) => (
           <Carousel.Item key={index}>

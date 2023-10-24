@@ -1,78 +1,66 @@
 .home-page {
   display: flex;
-  flex-direction: column; /* Change to a vertical layout */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh; /* Adjust the height as needed */
-
+  justify-content: center, flex-start;
+  height: 100vh;
+  
   .homepage-services {
     color: #087551;
-    font-size: 28px; /* Adjust the font size */
-    text-align: center; /* Center align the text */
-    padding-top: 175px; /* Adjust the top padding to create space */
-    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
   }
-
   h2 {
     font-size: 24px;
     color: black;
-    margin-bottom: 20px; /* Add margin to create space between the header and the card */
-    text-align: center; /* Center align the h2 element */
+    // margin-bottom: 10px; // margin between the header and the card
+    text-align: center;
   }
-
   .g-4 .col {
-    margin-bottom: 20px; /* Add margin to create space between the cards */
+    margin-bottom: 30px; // margin between the cards
   }
-
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     background-color: gray;
   }
-
   .g-4 {
-    margin: 20px 0; /* Add margin to space out the cards */
+    margin: 5px 0; // margin around the cards
   }
-
   .card {
-    border: 1px solid #ddd; /* Card border color */
-    border-radius: 10px; /* Adjust the card border radius */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    // transition effect when scaling
+    @media (max-width: 768px) {
+      transform: scale(0.9); // reduce card size
+    }
   }
-
   .card-title {
-    font-size: 20px; /* Font size for card titles */
-    text-align: center; /* Center align the card title */
-  }
-
-  .card-text {
-    font-size: 16px; /* Font size for card text */
-  }
-}
-
-.container {
-  padding-top: 20px;
-}
-
-@media (max-width: 768px) {
-  /* Add responsive styles for screens up to 768px wide */
-  .homepage-services {
     font-size: 20px;
-    padding-top: 100px;
+    text-align: center;
   }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  .g-4 .col {
-    margin-bottom: 10px;
-  }
-
-  .card-title {
-    font-size: 18px;
-  }
-
   .card-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
+
+// @media (max-width: 768px) {
+//   // Reduce font sizes and margins for smaller screens
+//   .homepage-services {
+//     font-size: 12px;
+//   }
+//   h2 {
+//     font-size: 12px;
+//   }
+//   .g-4 .col {
+//     margin-bottom: 12px;
+//   }
+//   .card-title {
+//     font-size: 30px;
+//   }
+//   .card-text {
+//     font-size: 10px;
+//   }
+// }

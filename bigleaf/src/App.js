@@ -27,8 +27,9 @@ import TreeRemoval from './components/TreeRemoval/TreeRemoval';
 function App() {
     return (
         <Router basename='/big-leaf-arbor'>
-            <div className="container mx-auto">
             <NavbarComp />
+            <div className="container mx-auto">
+            {/* <NavbarComp /> */}
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/treecare' element={<TreeCare />} />
