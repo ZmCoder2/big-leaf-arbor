@@ -10,11 +10,11 @@ function NavbarComp() {
       <Navbar expand="md" className="bg-body-tertiary mx-auto ml-auto">
         {/* navbar to be dark is  bg="dark" get rid of classname if you want dark */}
         <Container>
-          <Link to="/" className="navbar-brand mx-auto">Bigleaf Arbor</Link>
+          <Link to="/" className="navbar-brand mx-auto" >Bigleaf Arbor</Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavDropdown title={<Link to="/treecare">Services</Link>} id="basic-nav-dropdown">
+              <NavDropdown title={<Link to="/services">Services</Link>} style={{ marginLeft: '20px' }} id="basic-nav-dropdown">
               <NavDropdown.Item>
                   <Link to="/treeremoval">Tree Removal</Link>
                 </NavDropdown.Item>
