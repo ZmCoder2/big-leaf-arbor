@@ -14,7 +14,7 @@ function NavbarComp() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavDropdown title={<Link to="/treecare">Tree Care</Link>} id="basic-nav-dropdown">
+              <NavDropdown title={<Link to="/treecare">Services</Link>} id="basic-nav-dropdown">
               <NavDropdown.Item>
                   <Link to="/treeremoval">Tree Removal</Link>
                 </NavDropdown.Item>
@@ -34,17 +34,25 @@ function NavbarComp() {
                 <NavDropdown.Item>
                   <Link to="/stumpgrinding">Stump Grinding</Link>
                 </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Special Services" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                  <Link to="/ivyremoval">Ivy Removal</Link>
-                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
                   <Link to="/shrubpruning">Shrub Pruning</Link>
                 </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item>
+                  <Link to="/ivyremoval">Ivy Removal</Link>
+                </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title={<Link to="/consulting">Consulting</Link>} id="basic-nav-dropdown">
+              <NavDropdown title="Who We Serve" id="basic-nav-dropdown">
+              <NavDropdown.Item>
+                  <Link to="/residentialclients">Residential Clients</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item>
+                  <Link to="/commercialproperties">Commercial Properties</Link>
+                </NavDropdown.Item>
+              </NavDropdown>
+              {/* <NavDropdown title={<Link to="/consulting">Consulting</Link>} id="basic-nav-dropdown">
               <NavDropdown.Item>
                   <Link to="/diagnosis">Diagnosis</Link>
                 </NavDropdown.Item>
@@ -52,9 +60,9 @@ function NavbarComp() {
                 <NavDropdown.Item>
                   <Link to="/hazardevaluation">Hazard Evaluation</Link>
                 </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Service Areas" id="basic-nav-dropdown">
-                <NavDropdown title="Service Area" id="servArea-menu">
+              </NavDropdown> */}
+              <NavDropdown title="Service Areas" id="servArea-menu">
+                {/* <NavDropdown title="Service Area" id="servArea-menu"> */}
                   <NavDropdown.Item>Acworth</NavDropdown.Item>
                   <NavDropdown.Item>Alpharetta</NavDropdown.Item>
                   <NavDropdown.Item>Atlanta</NavDropdown.Item>
@@ -73,15 +81,15 @@ function NavbarComp() {
                   <NavDropdown.Item >Roswell</NavDropdown.Item>
                   <NavDropdown.Item >Woodstock</NavDropdown.Item>
                   {/* need to find out the areas we cover */}
-                </NavDropdown>
-                <NavDropdown.Divider />
+                {/* {/* </NavDropdown> */}
+                {/* <NavDropdown.Divider />
                 <NavDropdown.Item>
                   <Link to="/residentialclients">Residential Clients</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
                   <Link to="/commercialproperties">Commercial Properties</Link>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="Who We Are" id="basic-nav-dropdown">
               <NavDropdown.Item>

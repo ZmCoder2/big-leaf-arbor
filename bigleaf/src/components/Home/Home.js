@@ -100,7 +100,7 @@ const Home = () => {
       </Row>
       </Container>
       <Row>
-      <h2 className="homepage-who-we-service">Who We Service</h2>
+      <h2 className="homepage-who-we-service">Who We Serve</h2>
       </Row>
       <Row xs={1} md={2} lg={4} className="g-4">
         {whoWeserviceData.map((data, idx) => (
