@@ -10,14 +10,12 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const Services = () => {
     return (
-        <div className="services-page">
-            <Container>
-                <Row>
-                    <Col>Hello from Services page</Col>
-                </Row>
-            </Container>
-        </div>
+      <div className="services-page">
+        <Container className="d-flex justify-content-center align-items-start" style={{ minHeight: '100vh' }}>
+          <h2 className='services-header'>Our Services</h2>
+        </Container>
+      </div>
     );
-}
+  }
 
 export default Services;
